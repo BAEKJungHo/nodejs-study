@@ -1,2 +1,1 @@
-# nodejs-study
-Inflearn Node.js Study
+# Node.js Study
