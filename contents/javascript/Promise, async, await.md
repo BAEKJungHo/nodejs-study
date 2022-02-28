@@ -76,12 +76,43 @@ Promise.allSettled([promise1, promise2, promise3]).then((results) => {
 
 # async/await
 
+> async 는 발음 기호상 에이싱크라고 부르는게 맞다. ajax 도 에이작스이다. await 은 어웨잇이 맞다.
+
 - __`변수 = await 프로미스;` 인 경우 프로미스가 resolve 된 값이 변수에 저장__
 - __`변수 await 값;` 인 경우 그 값이 변수에 저장__
-- __await 이 then 역할이라고 생각하면 됨__
+- __await 이 `then` 역할이라고 생각하면 됨__
 - __실행 순서는 오른쪽에서 왼쪽__
   - `let user = await Users.findOne({});`
+  - 기존의 then 을 사용하던 경우의 실행 순서는 왼쪽에서 오른쪽
+- __await 을 사용하기 위해서는 함수를 만들고 prefix 로 async 를 같이 써야 한다.__
+  - 요즘은 `top level await` 이라는 개념이 등장해서 아래와 같이 사용할 수도 있다.
+  - ```javascript
+    // 기존
+    async function blahblah() {
+      const result = await promise;
+    }
+    
+    // top level await
+    const result = await promise;
+    ```
 
+- __async 함수에서 return 하는 경우에는 then or await 으로 받아야 한다.__
+
+```javascript
+async function main() {
+  const result = await promise;
+  return 'zerocho';
+}
+
+main().then((name) => ...)
+
+or
+
+const name = await main()
+```
+
+- __async/await__    
+    
 ```javascript
 async function findAndSaveUser(User) {
   let user = await Users.findOne({});
@@ -92,7 +123,8 @@ async function findAndSaveUser(User) {
 }
 ```
 
-- __각각의 프로미스 에러 처리를 위해서는 각각을 try catch로 감싸주어야 함__
+- __각각의 프로미스 에러 처리를 위해서는 각각을 try catch 로 감싸주어야 함__
+  - async/await 이 기존의 promise/then 과 똑같지만 reject 가 없어서 try catch 로 감싸서 에러를 처리해야 함
 
 ```javascript
 async function findAndSaveUser(Users) {
