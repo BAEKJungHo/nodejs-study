@@ -186,7 +186,8 @@ then console.log('hi')
 > 백그라운드에는 2개의 작업이 들어있으며, 어떤 것이 먼저 실행될지는 모른다. 백그라운드 작업이 먼저 끝난애가 `Task Queue` 에 먼저 들어간다.
 
 - 먼저 실행 된 애가 먼저 Task Queue 에 들어가있다고 가정하자. (즉, console.log('wow') - console.log('hi'))
-- 그런데, Promise 가 새치기를 해서, Timer 보다 먼저 Call Stack 에 쌓이고 실행된다.
+- 그런데, Promise 가 `새치기`를 해서(then 이 Timer 보다 우선순위가 높아서), Timer 보다 먼저 Call Stack 에 쌓이고 실행된다.
+  - __Promise 의 then/catch or process.nextTick 은 Timer 보다 우선순위가 높아서 Task Queue 에서 새치기를 한다.__
 
 > 최종 출력 결과는 다음과 같다.
 
