@@ -4,6 +4,7 @@
 
 - __var getCandy 와 var count 주목__
   - candyMachine 부터 시작해서 속성을 찾아 들어가야 함
+  - this 를 사용 중이면 구조분해 할당을 하지 않는 것이 좋음
 
 ![destructuring2](https://user-images.githubusercontent.com/47518272/155981909-4595a20e-b6c4-4db7-b490-c8f95f2e46b6.png)
 
