@@ -68,3 +68,12 @@
   - 모바일 앱 프레임워크: React Native
   - 데스크탑 개발 도구: Electron(Atom, Slack, VSCode, Discord 등 제작
   - 위 프레임워크들이 노드 기반으로 동작함
+
+## 노드 설치
+
+- __윈도(10 기준), 맥(카탈리나 기준)__
+  - https://nodejs.org 접속
+  - LTS는 안정된 버전, Current는 최신 버전(실험적)
+  - ![nodeinstall](https://user-images.githubusercontent.com/47518272/155970433-1ded16a3-7548-41bc-9cad-8da09e036bee.png)
+- __리눅스(우분투 18 LTS 기준)__
+  - ![nodelinux](https://user-images.githubusercontent.com/47518272/155970447-91dfaef7-5c8f-484a-99a7-b1202ba434df.png)
