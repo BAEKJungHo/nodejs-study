@@ -78,6 +78,9 @@ Promise.allSettled([promise1, promise2, promise3]).then((results) => {
 
 - __`변수 = await 프로미스;` 인 경우 프로미스가 resolve 된 값이 변수에 저장__
 - __`변수 await 값;` 인 경우 그 값이 변수에 저장__
+- __await 이 then 역할이라고 생각하면 됨__
+- __실행 순서는 오른쪽에서 왼쪽__
+  - `let user = await Users.findOne({});`
 
 ```javascript
 async function findAndSaveUser(User) {
