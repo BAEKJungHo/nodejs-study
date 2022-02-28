@@ -52,3 +52,19 @@
   - `싱글 스레드라 주어진 일을 하나밖에 처리하지 못함`
   - 블로킹이 발생하는 경우 나머지 작업은 모두 대기해야 함 -> 비효율 발생
 
+## 노드의 역할
+
+### 서버로서의 노드
+
+- __노드 서버의 장단점__
+  - ![noderole](https://user-images.githubusercontent.com/47518272/155966986-7f3e15ca-fa8f-4b87-917e-7a23f73dc5d3.png)
+  - CPU 작업을 위해 AWS Lambda 나 Google Cloud Functions 같은 별도 서비스 사용
+  - 페이팔, 넷플릭스, 나사, 월마트, 링크드인, 우버 등에서 메인 또는 서브 서버로 사용
+
+## 서버 외의 노드
+
+- __웹 모바일, 데스크탑 애플리케이션에서도 사용__
+  - 웹 프레임워크: Angular, React, Vue, Meteor 등
+  - 모바일 앱 프레임워크: React Native
+  - 데스크탑 개발 도구: Electron(Atom, Slack, VSCode, Discord 등 제작
+  - 위 프레임워크들이 노드 기반으로 동작함
