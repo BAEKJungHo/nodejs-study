@@ -77,3 +77,8 @@
   - ![nodeinstall](https://user-images.githubusercontent.com/47518272/155970433-1ded16a3-7548-41bc-9cad-8da09e036bee.png)
 - __리눅스(우분투 18 LTS 기준)__
   - ![nodelinux](https://user-images.githubusercontent.com/47518272/155970447-91dfaef7-5c8f-484a-99a7-b1202ba434df.png)
+- __설치 확인__
+  - `node -v`
+  - `npm -v`
+  - npm 버전 업데이트 방법(맥과 리눅스는 앞에 sudo 입력)
+    - `npm install -g npm`
