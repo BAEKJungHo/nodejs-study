@@ -93,6 +93,8 @@
   - LIFO 구조라서 스택이라고 불림
 
 > JS 와 Node 의 동작은 `Call Stack, Background, Task Queue` 만 기억하면된다.
+> 
+> Call Stack 부분만 자바스크립트 언어이고, Background, Task Queue 는 C, C++ 과 같은 다른 언어로 만들어져 있다. 이 부분은 자바스크립트 엔진이 알아서 처리해주는 것이다.
 
 ## JS 이벤트 루프
 
