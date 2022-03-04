@@ -99,6 +99,8 @@
   - Minor 는 하위 버전과 호환되는 수정 사항이 생겼을 때 올림
   - Patch 는 기능에 버그를 해결했을 때 올림
   - ![semver](https://user-images.githubusercontent.com/47518272/156726895-7a62dea7-705c-49fe-be31-3301cab35ee0.png)
+- `^`
+  - Ex. `^1` 은 첫 번째 자리는 무조건 일치해야한다는 의미이다. 
   - ![semver2](https://user-images.githubusercontent.com/47518272/156727610-9e6ac952-832c-4cbe-8d23-59794d3d5a7a.png)
 
 
