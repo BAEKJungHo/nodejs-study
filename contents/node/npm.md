@@ -111,7 +111,6 @@
 - __npm outdated__
   - 어떤 패키지에 기능 변화가 생겼는지 알 수 있음
   - ![npmoutdated](https://user-images.githubusercontent.com/47518272/156871054-3db4e191-5b16-4ada-9532-f4b425fcfb79.png)
-
 - __npm uninstall 패키지명__
   - 패키지 삭제(npm rm 패키지명으로도 가능)
 - __npm search 검색어__
@@ -120,6 +119,7 @@
   - 패키지의 세부 정보 파악 가능
 - __npm adduser__
   - npm 에 로그인을 하기 위한 명령어(npmjs.com 에서 회원가입)
+  - `npm login` 도 가능
 - __npm whoami__
   - 현재 사용자가 누구인지 알려줌
 - __npm logout__
@@ -130,5 +130,4 @@
 ## npm 배포하기
 
 - Node.js 교과서 5장 
-
 
