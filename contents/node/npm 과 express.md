@@ -52,6 +52,7 @@
 
 - __express 설치하기__
   - ![express](https://user-images.githubusercontent.com/47518272/156721705-1df3c150-eb15-4f06-bfef-4b61819e7fbe.png)
+  - express 란 `Node.js 를 위한 빠르고 개방적인 간결한 웹 프레임워크` 이다.
 - __package.json에 기록됨(dependencies에 express 이름과 버전 추가됨)__
   - ![packagejson3](https://user-images.githubusercontent.com/47518272/156722422-bc0d00d7-3994-42f1-a0bc-6dcb6b6924fd.png)
 
