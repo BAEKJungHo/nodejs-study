@@ -28,6 +28,7 @@
 ## macOS 컴퍼스 설치하기
 
 - 워크벤치와 비슷함
-- 공식 사이트를 통해 컴퍼스 설치(https://mongodb.com/download-center/compass), 설치 후 응용 프로그램으로 드래그
+- 공식 사이트를 통해 컴퍼스 설치(https://mongodb.com/download-center/compass)
+- 설치 후 응용 프로그램으로 드래그
 
 ![mongomac4](https://user-images.githubusercontent.com/47518272/157056632-bdd1564d-3270-47ea-9be4-12e270199e13.png)
