@@ -124,6 +124,26 @@ console.log('끝');
     - 이벤트 루프는 Task Queue 에 다음 함수가 들어올 때 까지 대기
     - Task Queue 는 실제로 여러 개고, Task Queue 들과 함수들 간의 순서를 이벤트 루프가 결정함
 
+### async 내 동기 코드와 비동기 코드
+
+```javascript
+fun async() {
+  const { ... } = blahblah
+  
+  // 동기
+  const { a, b } = findClosedDate()
+  
+  // 비동기
+  await DB.User.save()
+  await DB.User.blahblah()
+
+}
+```
+
+- await 은 비동기 함수 내에서 비동기 작업을 순차적으로 처리하기 위해 사용
+- 동기 코드는 백그라운드에 들어가지 않고 호출 스택에서 먼저 처리된다.
+  - Ex. 동기 코드 : 폐업일 날짜를 계산하는 로직 등
+
 ### Example
 
 다음 코드가 어떻게 동작할지 `Call Stack, Background, Task Queue` 를 그리면서 확인해보자.
