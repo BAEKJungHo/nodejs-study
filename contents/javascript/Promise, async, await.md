@@ -188,6 +188,28 @@ async function other() {
   
 ![async](https://user-images.githubusercontent.com/47518272/155986537-b9cfb692-2ec9-4f9d-9f2b-7fe9e512f1f4.png)
 
+## Example
 
+```javascript
+function getData() {
+  return new Promise(function(resolve, reject) {
+    $.get('url 주소/products/1', function(response) {
+      if (response) {
+        resolve(response);
+      }
+      reject(new Error("Request is failed"));
+    });
+  });
+}
+
+// 위 $.get() 호출 결과에 따라 'response' 또는 'Error' 출력
+getData().then(function(data) {
+  console.log(data); // response 값 출력
+}).catch(function(err) {
+  console.error(err); // Error 출력
+});
+```
+
+위 코드는 서버에서 제대로 응답을 받아오면 resolve() 메서드를 호출하고, 응답이 없으면 reject() 메서드를 호출하는 예제이다. 호출된 메서드에 따라 then()이나 catch()로 분기하여 응답 결과 또는 오류를 출력다.
 
 
