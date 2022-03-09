@@ -212,4 +212,6 @@ getData().then(function(data) {
 
 위 코드는 서버에서 제대로 응답을 받아오면 resolve() 메서드를 호출하고, 응답이 없으면 reject() 메서드를 호출하는 예제이다. 호출된 메서드에 따라 then()이나 catch()로 분기하여 응답 결과 또는 오류를 출력다.
 
+## References
 
+- https://joshua1988.github.io/web-development/javascript/promise-for-beginners/
