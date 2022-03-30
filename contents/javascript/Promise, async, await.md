@@ -215,3 +215,4 @@ getData().then(function(data) {
 ## References
 
 - https://joshua1988.github.io/web-development/javascript/promise-for-beginners/
+- https://nodejs.dev/learn/understanding-javascript-promises#consuming-a-promise
