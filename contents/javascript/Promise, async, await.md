@@ -64,6 +64,23 @@ Promise.all([promise1, promise2, promise3])
   .then((result) => console.log(result))
   .catch((e) => console.error(e));
 ```
+
+```javascript
+const points = await Promise.all(
+		phones.map(async phone => {
+      // findById 는 비동기 함수
+			const info = findById(id, phone)
+			return { accountNumber, point }
+		})
+	)
+```
+
+위와 같은 코드에서 return 값이 원하는대로 동작하기 위해서는 findById 앞에 await 을 붙여줘야 한다.
+
+__위와 같은 코드에서 findById 를 수행하고 Promise 가 아닌 값을 반환 받아서, 추가적인 로직을 진행해야 할 때는 Promise.all 내부에서도 await 을 붙여줘야 한다.__
+
+반면, 추가적인 로직이 없다면 Promise.all 내부에 await 을 붙여주지 않아도 된다.
+
 ```javascript
 // allSettled() 는 promises 중 실패한 결과가 있더라도 catch 로 빠지지 않는다.
 // 상태 값에 따라 분기처리를 할 수 있다.
