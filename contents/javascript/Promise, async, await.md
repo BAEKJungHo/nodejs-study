@@ -72,7 +72,7 @@ const points = await Promise.all(
 		phones.map(async phone => {
       			// findById 는 비동기 함수
 			const info = findById(id, phone)
-			return { accountNumber, point }
+			return { phone, point }
 		})
 	)
 ```
