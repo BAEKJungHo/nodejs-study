@@ -106,7 +106,7 @@ Promise.allSettled([promise1, promise2, promise3]).then((results) => {
   - `let user = await Users.findOne({});`
   - 기존의 then 을 사용하던 경우의 실행 순서는 왼쪽에서 오른쪽
 - __await 을 사용하기 위해서는 함수를 만들고 prefix 로 async 를 같이 써야 한다.__
-  - 요즘은 `top level await` 이라는 개념이 등장해서 아래와 같이 사용할 수도 있다.
+  - 요즘은 [top level await](https://blog.saeloun.com/2021/11/25/ecmascript-top-level-await) 이라는 개념이 등장해서 아래와 같이 사용할 수도 있다.
   - ```javascript
     // 기존
     async function blahblah() {
