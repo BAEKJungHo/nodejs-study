@@ -67,8 +67,10 @@ Promise.all([promise1, promise2, promise3])
 
 ```javascript
 const points = await Promise.all(
+		// 내부에 await 키워드가 없다면 async 가 필요없다.
+		// 즉, async phone (x) > phone (o)
 		phones.map(async phone => {
-      // findById 는 비동기 함수
+      			// findById 는 비동기 함수
 			const info = findById(id, phone)
 			return { accountNumber, point }
 		})
