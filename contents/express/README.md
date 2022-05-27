@@ -1,6 +1,8 @@
 # 라우팅
 
 - https://expressjs.com/ko/guide/routing.html
+- https://expressjs.com/ko/guide/writing-middleware.html
+- https://expressjs.com/ko/guide/using-middleware.html
 
 ## app.use vs app.get 
 
