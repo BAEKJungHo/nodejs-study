@@ -15,3 +15,7 @@
 > __app.use는 라우터들의 공통 로직을 분리하는 용도로 사용하는 겁니다.__
 >
 > 그리고 res.end 다음에는 함부로 next 붙이면 안 됩니다. res.end는 응답 종료로 그 다음에 나올 코드는 없습니다. 다음 미들웨어로 가서 또 응답을 보내면 안 됩니다.
+
+## errorHandler
+
+- https://jeonghwan-kim.github.io/node/2017/08/17/express-error-handling.html
