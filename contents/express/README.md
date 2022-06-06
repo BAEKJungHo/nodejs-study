@@ -24,3 +24,4 @@
 ## camelcase to snakecase
 
 - https://jaehoney.tistory.com/87
+- https://www.w3resource.com/javascript-exercises/fundamental/javascript-fundamental-exercise-120.php
